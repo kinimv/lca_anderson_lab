@@ -22,7 +22,7 @@ or
 pip install pandas
 
 # Database
-This repo contains files names names.txt and nodes.txt which is acquired from this link:
+This repo does not contain the files names names.txt and nodes.txt which are required. They can be is acquired from this link:
 https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 
 The National Center for Biotechnology Information (NCBI) creates and maintains this database, more information for which can be found here:
