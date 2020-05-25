@@ -26,6 +26,7 @@ def parent_append(chain):
 #Nodes and names in same directory as python file
 #https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 #Specifying the format nodes.dmp is in
+print("Loading databases...")
 nodes = pd.read_table('nodes.dmp', sep="\\t\|\\t", header=None,engine='python')
 
 
@@ -74,7 +75,7 @@ while True:
 
 #Input of organism 2
 while True:
-    org2 = str(input("Enter name of the first organism: ")) #Eg. Middle East respiratory syndrome-related coronavirus
+    org2 = str(input("Enter name of the second organism: ")) #Eg. Middle East respiratory syndrome-related coronavirus
     org2row = names[names['name_txt'].str.contains(org2, na = False, regex=False)] #searches input on the names_txt column
     if org2row.empty:
         print('Organism name not found in NIH database: Please try again')
@@ -133,6 +134,7 @@ org1_tree, org2_tree = org1_chain[::-1], org2_chain[::-1]
 
 
 #Prints the links to the common ancestor with nicely formatted columns
+print("Ancestor Tree:")
 print("%30s %s" % (org1_tree[0],names.loc[names.loc[names['tax_id'] == org1_tree[0]].index[0],'name_txt']))
 for i in range(1,min(len(org1_tree),len(org2_tree))):
     print("%-40s %s" % ((str(org1_tree[i]) + " " + names.loc[names.loc[names['tax_id'] == org1_tree[i]].index[0],'name_txt']),
@@ -145,10 +147,4 @@ if len(org2_tree) > len(org1_tree):
     for i in range(len(org1_tree),len(org2_tree)):
         print("%-40s %s" % (" ", (str(org2_tree[i]) + " " +
                                   names.loc[names.loc[names['tax_id'] == org2_tree[i]].index[0],'name_txt'])))
-
-
-# In[ ]:
-
-
-
 
