@@ -29,7 +29,9 @@ The National Center for Biotechnology Information (NCBI) creates and maintains t
 https://www.ncbi.nlm.nih.gov/taxonomy
 
 # Description
-The programs prompts you to enter the names of two organisms you want to find the common ancestor of, and then searches the NCBI database for the taxonomy id and its parent's taxonomy id. It then builds a tree of the ancestors of the given compounds up to the common ancestor
+The programs prompts you to enter the names of two organisms you want to find the common ancestor of, and then searches the NCBI database for the taxonomy id and its parent's taxonomy id. It then builds a tree of the ancestors of the given compounds up to the common ancestor.
+
+Please note: Note that since there can be different synonyms for the tax_id, it defaults to the first result in its search. This can cause the name on the tree to appear differently (ie a synonym).
 
 # Files
 1. LCA.ipynb: a Jupyter notebook file for interpretive running of the program
@@ -38,5 +40,3 @@ The programs prompts you to enter the names of two organisms you want to find th
 4. nodes.dmp: file containing the nodes in the taxonomy database from the NCBI website (download needed)
 5. README.md: this readme file
 6. Sample with H1N1 and MERS.pdf: a PDF example of the program running and its output
-
-Please note: Note that since there can be different synonyms for the tax_id, it defaults to the first result in its search. This can cause the name on the tree to appear differently (ie a synonym).
