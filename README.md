@@ -29,9 +29,7 @@ The National Center for Biotechnology Information (NCBI) creates and maintains t
 https://www.ncbi.nlm.nih.gov/taxonomy
 
 # Description
-The programs prompts you to enter the names of two organisms you want to find the common ancestor of, and then searches the NCBI database for the taxonomy id and its parent's taxonomy id
-
-It then builds a tree of the ancestors of the given compounds up to the common ancestor
+The programs prompts you to enter the names of two organisms you want to find the common ancestor of, and then searches the NCBI database for the taxonomy id and its parent's taxonomy id. It then builds a tree of the ancestors of the given compounds up to the common ancestor
 
 # Files
 1. LCA.ipynb: a Jupyter notebook file for interpretive running of the program
