@@ -36,7 +36,7 @@ It then builds a tree of the ancestors of the given compounds up to the common a
 # Files
 1. LCA.ipynb: a Jupyter notebook file for interpretive running of the program
 2. LCA.py: a Python program that can be run locally as long as the other files are present in the same folder of your computer
-3. names.dmp: file containing the names in the taxonomy database from the NCBI website
-4. nodes.dmp: file containing the nodes in the taxonomy database from the NCBI website
+3. names.dmp: file containing the names in the taxonomy database from the NCBI website (download needed)
+4. nodes.dmp: file containing the nodes in the taxonomy database from the NCBI website (download needed)
 5. README.md: this readme file
 6. Sample with H1N1 and MERS.pdf: a PDF example of the program running and its output
