@@ -36,7 +36,9 @@ Please note: Note that since there can be different synonyms for the tax_id, it 
 # Files
 1. LCA.ipynb: a Jupyter notebook file for interpretive running of the program
 2. LCA.py: a Python program that can be run locally as long as the other files are present in the same folder of your computer
-3. names.dmp: file containing the names in the taxonomy database from the NCBI website (download needed)
-4. nodes.dmp: file containing the nodes in the taxonomy database from the NCBI website (download needed)
-5. README.md: this readme file
-6. Sample with H1N1 and MERS.pdf: a PDF example of the program running and its output
+3. LCA_with_class_new.ipynb: alternate implementation of LCA.ipynb using classes
+4. LCA_with_class_new.py: alternate implementation of LCA.ipynb using classes
+5. names.dmp: file containing the names in the taxonomy database from the NCBI website (download needed)
+6. nodes.dmp: file containing the nodes in the taxonomy database from the NCBI website (download needed)
+7. README.md: this readme file
+8. Sample with H1N1 and MERS.pdf: a PDF example of the program running and its output
